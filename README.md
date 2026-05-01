@@ -3,7 +3,7 @@
 # Santander Customer Satisfaction Prediction
 
 
-* **One Sentence Summary:** This repository applies machine learning models to the [Santander Customer Satisfaction Kaggle competition](https://www.kaggle.com/competitions/santander-customer-satisfaction/data) to predict whether a customer is dissatisfied using anonymized banking features.
+* **One Sentence Summary:** This project uses the [Santander Customer Satisfaction Kaggle competition](https://www.kaggle.com/competitions/santander-customer-satisfaction/data) data to predict whether a customer is dissatisfied using anonymized banking features
 
 
 ## Overview
