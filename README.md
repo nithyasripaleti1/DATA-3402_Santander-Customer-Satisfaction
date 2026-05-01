@@ -1,4 +1,4 @@
-# DATA-3402_Santander-Customer-Satisfaction
+# DATA-3402_Final_Project
 
 # Santander Customer Satisfaction Prediction
 
