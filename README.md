@@ -64,6 +64,9 @@ The following preprocessing steps were performed:
 
 #### Data Visualization
 
+<img width="895" height="545" alt="Screenshot 2026-05-01 at 11 22 41" src="https://github.com/user-attachments/assets/6f938065-29ba-40d3-bb17-1bdaf67f8fee" />
+
+
 
 Several visualizations were created in the notebook:
 
