@@ -145,20 +145,11 @@ Key hyperparameters used:
 
 
 * **Random Forest**
- * `n_estimators=200`
- * `max_depth=10`
- * `min_samples_leaf=20` for the main validation experiment
- * `min_samples_leaf=10` for the near-constant feature experiment and final retraining
- * `class_weight="balanced"`
- * `random_state=42`
- * `n_jobs=-1`
+ * `n_estimators=200`, `max_depth=10`,  `min_samples_leaf=20`, `min_samples_leaf=10`, `random_state=42`, `n_jobs=-1`
 
 
 * **Gradient Boosting**
- * `n_estimators=150`
- * `learning_rate=0.05`
- * `max_depth=3`
- * `random_state=42`
+ * `n_estimators=150`, `learning_rate=0.05`, `max_depth=3`, `random_state=42`
 
 
 * **Threshold tuning**
@@ -318,59 +309,6 @@ Expected repository files:
  * Project description and reproduction instructions.
 
 
-
-
-### Data
-
-
-Download the data from the Kaggle competition page:
-
-
-<https://www.kaggle.com/competitions/santander-customer-satisfaction/data>
-
-
-Place the following files in the same directory as the notebook:
-
-
-```text
-train.csv
-test.csv
-```
-
-
-The notebook expects these exact filenames:
-
-
-```python
-train = pd.read_csv("train.csv")
-test = pd.read_csv("test.csv")
-```
-
-
-### Training
-
-
-To train the models:
-
-
-1. Open the notebook:
-
-
-```bash
-jupyter notebook "DATA3402_Project (3)(1).ipynb"
-```
-
-
-2. Run all cells from top to bottom.
-3. The notebook will:
-  * load the data,
-  * clean the features,
-  * split the training data,
-  * train Logistic Regression, Random Forest, and Gradient Boosting models,
-  * tune classification thresholds,
-  * compare performance,
-  * retrain the selected model on the full cleaned training data,
-  * create `santander_submission.csv`.
 
 
 ### Performance Evaluation
