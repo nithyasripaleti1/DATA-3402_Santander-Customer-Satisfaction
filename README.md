@@ -166,21 +166,6 @@ The models were trained in Python using scikit-learn inside a Jupyter Notebook.
 The notebook does not record exact runtime or hardware specifications. The models are standard scikit-learn models and should be reproducible on a normal laptop or in Google Colab. Random Forest used `n_jobs=-1` to use all available CPU cores.
 
 
-Training process:
-
-
-1. Load `train.csv` and `test.csv`.
-2. Perform exploratory data analysis.
-3. Clean and preprocess the data.
-4. Split the cleaned training data into stratified train and validation sets.
-5. Train baseline, Logistic Regression, Random Forest, and Gradient Boosting models.
-6. Tune classification thresholds using validation F1-score.
-7. Compare models using accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrices.
-8. Retrain the selected Random Forest model on the full cleaned training data.
-9. Generate predictions on the Kaggle test set.
-10. Save final predictions as `santander_submission.csv`.
-
-
 Stopping criteria:
 
 
@@ -307,6 +292,21 @@ Expected repository files:
  * Logo image referenced at the top of this README.
 * `README.md`
  * Project description and reproduction instructions.
+
+Training process:
+
+
+1. Load `train.csv` and `test.csv`.
+2. Perform exploratory data analysis.
+3. Clean and preprocess the data.
+4. Split the cleaned training data into stratified train and validation sets.
+5. Train baseline, Logistic Regression, Random Forest, and Gradient Boosting models.
+6. Tune classification thresholds using validation F1-score.
+7. Compare models using accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrices.
+8. Retrain the selected Random Forest model on the full cleaned training data.
+9. Generate predictions on the Kaggle test set.
+10. Save final predictions as `santander_submission.csv`.
+
 
 
 
