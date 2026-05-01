@@ -280,7 +280,7 @@ Possible next steps include:
 Expected repository files:
 
 
-* `DATA3402_Project (3)(1).ipynb`
+* `DATA3402_Project (3).ipynb`
  * Main notebook containing data loading, EDA, preprocessing, modeling, threshold tuning, evaluation, and final submission generation.
 * `train.csv`
  * Kaggle training data with anonymized customer features and `TARGET` labels.
