@@ -206,23 +206,13 @@ Difficulties encountered:
 * The target variable was extremely imbalanced, making accuracy unreliable.
 * The features were anonymized, limiting domain-specific interpretation.
 * Many features were sparse, constant, near-constant, or duplicated.
-* The default classification threshold of 0.50 was not always appropriate, especially for Gradient Boosting and Logistic Regression.
+* The default classification threshold of 0.50 is not always appropriate, especially for Gradient Boosting and Logistic Regression.
 
 
 These were addressed by using class weighting, stratified splitting, feature cleanup, multiple evaluation metrics, and threshold tuning.
 
 
 ### Performance Comparison
-
-
-The main evaluation metrics were:
-
-
-* **Accuracy:** overall fraction of correct predictions
-* **Precision:** among customers predicted as dissatisfied, how many were truly dissatisfied
-* **Recall:** among truly dissatisfied customers, how many were detected
-* **F1-score:** harmonic mean of precision and recall
-* **ROC-AUC:** ability of the model to rank dissatisfied customers above satisfied customers
 
 
 Because the dataset is highly imbalanced, **F1-score, recall, precision, and ROC-AUC** were more important than accuracy alone.
@@ -302,16 +292,9 @@ The cross-validation results support the validation-set conclusion that Random F
 
 Possible next steps include:
 
-
-* Submit predicted probabilities instead of hard binary labels to better align with the original Kaggle competition format.
 * Try stronger gradient-boosted tree models such as XGBoost, LightGBM, or CatBoost.
-* Perform more systematic hyperparameter tuning using grid search or randomized search.
-* Use resampling methods such as SMOTE, undersampling, or hybrid sampling to address class imbalance.
-* Calibrate predicted probabilities using Platt scaling or isotonic regression.
-* Explore feature engineering based on sparse activity indicators.
 * Try dimensionality reduction or feature selection methods for highly sparse features.
 * Evaluate models using PR-AUC, which may be more informative for highly imbalanced classification.
-* Compare threshold choices based on business costs, such as the cost of missing a dissatisfied customer versus the cost of incorrectly flagging a satisfied customer.
 
 
 ## How to Reproduce Results
@@ -337,25 +320,6 @@ Expected repository files:
  * Project description and reproduction instructions.
 
 
-### Software Setup
-
-
-Install Python 3 and the required packages:
-
-
-```bash
-pip install pandas numpy matplotlib scikit-learn jupyter
-```
-
-
-Required Python libraries:
-
-
-* `pandas`
-* `numpy`
-* `matplotlib`
-* `scikit-learn`
-* `jupyter`
 
 
 ### Data
