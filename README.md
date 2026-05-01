@@ -113,7 +113,6 @@ The following models were tested:
 2. **Logistic Regression**
   * Used as a linear baseline model.
   * Included `StandardScaler` because Logistic Regression is sensitive to feature scale.
-  * Used `class_weight="balanced"` to account for class imbalance.
 
 
 3. **Random Forest Classifier**
