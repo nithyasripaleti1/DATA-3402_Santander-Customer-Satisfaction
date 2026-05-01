@@ -141,9 +141,7 @@ Key hyperparameters used:
 
 
 * **Logistic Regression**
- * `max_iter=1000`
- * `class_weight="balanced"`
- * `random_state=42`
+ * `max_iter=1000`, * `class_weight="balanced"`, * `random_state=42`
 
 
 * **Random Forest**
