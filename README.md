@@ -12,7 +12,7 @@
 The goal of this project is to predict customer dissatisfaction using the Santander Customer Satisfaction dataset. The target variable is `TARGET`, where `1` represents a dissatisfied customer and `0` represents a satisfied customer. The dataset is challenging because the features are anonymized, highly sparse, and the target class is heavily imbalanced: only about **3.96%** of customers in the training set are dissatisfied.
 
 
-This project formulates the task as a binary classification problem. The approach includes exploratory data analysis, feature cleanup, handling an abnormal encoded value, removing constant and duplicate columns, training multiple classification models, and tuning decision thresholds to improve performance on the minority class. The main models tested were Logistic Regression, Random Forest, and Gradient Boosting.
+This project is a binary classification problem. The approach includes exploratory data analysis, feature cleanup, handling an abnormal encoded value, removing constant and duplicate columns, training multiple classification models, and tuning decision thresholds to improve performance on the minority class. The main models tested were Logistic Regression, Random Forest, and Gradient Boosting.
 
 
 The best validation result came from a Random Forest model with threshold tuning. At the selected threshold of 0.75, the model achieved an F1-score of 0.2823, precision of 0.2050, recall of 0.4535, and ROC-AUC of 0.8276 on the validation set. Although Gradient Boosting had the highest ROC-AUC, Random Forest was selected because it achieved the best F1-score, which was more appropriate for this imbalanced classification task.
