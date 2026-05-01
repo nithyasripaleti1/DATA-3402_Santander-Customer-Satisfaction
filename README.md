@@ -3,7 +3,7 @@
 # Santander Customer Satisfaction Prediction
 
 
-* **One Sentence Summary:** This project uses the [Santander Customer Satisfaction Kaggle competition](https://www.kaggle.com/competitions/santander-customer-satisfaction/data) data to predict whether a customer is dissatisfied using anonymized banking features
+This project uses the [Santander Customer Satisfaction Kaggle competition](https://www.kaggle.com/competitions/santander-customer-satisfaction/data) data to predict whether a customer is dissatisfied using anonymized banking features
 
 
 ## Overview
